@@ -1,0 +1,401 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "chiedi ad unime",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CosaChiedereIntent",
+          "slots": [],
+          "samples": [
+            "Tutte le domande",
+            "Domande",
+            "Cosa posso chiedere",
+            "cosa chiedere",
+            "Cosa chiederti",
+            "Cosa posso chiederti"
+          ]
+        },
+        {
+          "name": "CertificatiComeRichiedereIntent",
+          "slots": [],
+          "samples": [
+            "Come posso richiedere un certificato",
+            "scaricare certificato",
+            "come scaricare un certificato",
+            "avere certificato",
+            "richiedere certificato",
+            "Come avere un certificato",
+            "Come richiedere un certificato"
+          ]
+        },
+        {
+          "name": "CertificatiChiDiplomaSupplementIntent",
+          "slots": [],
+          "samples": [
+            "Chi può richiedere il diploma supplement",
+            "Chi può avere il diploma supplement ",
+            "diploma supplement chi",
+            "Chi diploma supplement",
+            "Per chi è previsto il diploma supplement"
+          ]
+        },
+        {
+          "name": "CertificatiComeRichiedereDiplomaSupplementIntent",
+          "slots": [],
+          "samples": [
+            "come ottenere il diploma supplement",
+            "ottenere diploma supplement",
+            "come ottenere diploma supplement",
+            "come avere il diploma supplement",
+            "come avere diploma supplement",
+            "diploma supplement richiedere",
+            "richiedere diploma supplement",
+            "come richiedere diploma supplement",
+            "Come richiedere il diploma supplement "
+          ]
+        },
+        {
+          "name": "CertificatiCosaDiplomaSupplementIntent",
+          "slots": [],
+          "samples": [
+            "Cosa è il diploma supplement",
+            "diploma supplement che cos\u0027è",
+            "che cos\u0027è il diploma supplement",
+            "diploma supplement ",
+            "diploma supplement cos\u0027è",
+            "cos\u0027è il diploma supplement"
+          ]
+        },
+        {
+          "name": "CertificatiDoveRitirareIntent",
+          "slots": [],
+          "samples": [
+            "certificato dove ritirare",
+            "certificato dove prendere",
+            "certificato dove prelevare",
+            "dove prendo certificato",
+            "dove prelevo certificato",
+            "ritiro certificato dove",
+            "dove ritiro certificato",
+            "ritirare certificato dove",
+            "Dove ritirare certificato",
+            "Dove posso ritirare il certificato"
+          ]
+        },
+        {
+          "name": "CertificatiLaureaIngleseIntent",
+          "slots": [],
+          "samples": [
+            "come richiedere il certificato di laurea in lingua inglese",
+            "Certificato laurea lingua inglese",
+            "richiedere certificato di laurea in lingua inglese",
+            "richiedere certificato laurea lingua inglese",
+            "Posso richiedere un certificato di laurea in lingua inglese"
+          ]
+        },
+        {
+          "name": "CertificatiDiplomaSupplementBolloIntent",
+          "slots": [],
+          "samples": [
+            "acquisire diploma supplement",
+            "diploma supplement tasse",
+            "tasse diploma supplement ",
+            "cosa pagare per il diploma supplement",
+            "diploma supplement bollo",
+            "bollo diploma supplement",
+            "devo pagare il bollo per ottenere il diploma supplement",
+            "Per ottenere il diploma supplement devo pagare il bollo"
+          ]
+        },
+        {
+          "name": "CertificatiQuandoAvvalermiAutocertificazioneIntent",
+          "slots": [],
+          "samples": [
+            "quando avvalermi autocertificazione",
+            "autocertificazioni quando",
+            "quando autocertificazioni",
+            "quando autocertificazione ",
+            "autocertificazione quando",
+            "quando posso chiedere autocertificazioni",
+            "quando avvalermi certificazioni",
+            "Quando posso avvalermi delle autocertificazioni"
+          ]
+        },
+        {
+          "name": "ImmatrEsoneriIntent",
+          "slots": [],
+          "samples": [
+            "immatricolarsi ad un corso di laurea",
+            "come immatricolarsi ad un corso di laurea",
+            "immatricolazioni chi è esonerato",
+            "esonero immatricolazione ",
+            "esonero immatricolazioni",
+            "esoneri immatricolazioni",
+            "Esoneri immatricolazione"
+          ]
+        },
+        {
+          "name": "ImmatrComeIntent",
+          "slots": [],
+          "samples": [
+            "come immatricolarsi al primo anno",
+            "primo anno immatricolazione",
+            "Immatricolazione primo anno",
+            "Come posso immatricolarmi",
+            "immatricolazione",
+            "Come immatricolarsi"
+          ]
+        },
+        {
+          "name": "ImmatrCosaFareIntent",
+          "slots": [],
+          "samples": [
+            "immatricolazione cosa fare",
+            "passi immatricolazione",
+            "passaggi per immatricolazione",
+            "Passaggi per immatricolarsi"
+          ]
+        },
+        {
+          "name": "ImmatrDisabilitaEsenzioneIntent",
+          "slots": [],
+          "samples": [
+            "immatricolazione diritti studenti con disabilità",
+            "immatricolazione diritti disabili",
+            "sono studente con disabilità ho diritto a qualche esenzione",
+            "immatricolazione disabili esenzione",
+            "esenzioni immatricolazione disabili",
+            "esenzioni immatricolazione per ragazzi con disabilità",
+            "esenzioni immatricolazione per studenti con disabilità",
+            "esenzione immatricolazione disabilità",
+            "esenzioni immatricolazioni disabili"
+          ]
+        },
+        {
+          "name": "ImmatrStessoNucleoIntent",
+          "slots": [],
+          "samples": [
+            "immatricolazione nucleo familiare",
+            "immatricolazione componente della mia famiglia",
+            "immatricolazione sorella",
+            "immatricolazione fratello",
+            "Immatricolazioni stesso nucleo familiare"
+          ]
+        },
+        {
+          "name": "ImmatrLaureaMagistraleIntent",
+          "slots": [],
+          "samples": [
+            "corso laurea magistrale immatricolazione",
+            "immatricolazione corso laurea magistrale",
+            "come immatricolarsi per corso laurea magistrale",
+            "come immatricolarsi corso laurea magistrale",
+            "come immatricolarmi per un corso di laurea magistrale",
+            "magistrale immatricolazione",
+            "laurea magistrale immatricolazione",
+            "immatricolazione magistrale",
+            "immatricolazione laurea magistrale"
+          ]
+        },
+        {
+          "name": "ImmatrModPagamentoIntent",
+          "slots": [],
+          "samples": [
+            "metodo di pagamento immatricolazione",
+            "come pagare immatricolazione",
+            "immatricolazione come pagarre",
+            "immatricolazione metodo di pagamento"
+          ]
+        },
+        {
+          "name": "ImmatrPagamentoRateIntent",
+          "slots": [],
+          "samples": [
+            "posso pagare a rate l\u0027immatricolazione",
+            "posso pagare l\u0027immatricolazione a rate",
+            "immatricolazione pagare a rate",
+            "immatricolazione rate",
+            "rate immatricolazione",
+            "pagare a rate immatricolazione"
+          ]
+        },
+        {
+          "name": "ImmatrQuantoPagareIntent",
+          "slots": [],
+          "samples": [
+            "immatricolazione prezzo",
+            "quanto costa l\u0027immatricolazione",
+            "immatricolazione costo",
+            "costo immatricolazione",
+            "immatricolazione costi",
+            "quanto dovrò pagare per immatricolarmi"
+          ]
+        },
+        {
+          "name": "ImmatrNumeroProgrammatoIntent",
+          "slots": [],
+          "samples": [
+            "come posso partecipare alle selezioni",
+            "partecipare selezioni",
+            "partecipare selezioni corsi di laurea",
+            "come partecipare a selezioni ",
+            "partecipazione selezioni",
+            "come posso partecipare alle selezioni dei corsi di laurea a numero programmato"
+          ]
+        },
+        {
+          "name": "ImmatrNonAmmessoAltroCorsoIntent",
+          "slots": [],
+          "samples": [
+            "non ammesso al corso di laurea",
+            "non ammesso al corso di studi",
+            "accesso libero",
+            "corso di studi ad accesso libero",
+            "non ho passato le selezioni",
+            "non sono stato ammesso a nessun corso di laurea"
+          ]
+        },
+        {
+          "name": "ImmatrRinnovoAnniSuccIntent",
+          "slots": [],
+          "samples": [
+            "problemi con rinnovamento iscrizione",
+            "problema con l\u0027iscrizione",
+            "come rinnovare l\u0027iscrizione",
+            "non riesco a rinnovare l\u0027iscrizione "
+          ]
+        },
+        {
+          "name": "IseeCosaIntent",
+          "slots": [],
+          "samples": [
+            "descrizione isee",
+            "isee descrizione",
+            "Isee che cos\u0027è",
+            "Isee cos\u0027è",
+            "Cos\u0027è l\u0027Isee",
+            "Che cos\u0027è l\u0027Isee"
+          ]
+        },
+        {
+          "name": "IseeUtilitaIntent",
+          "slots": [],
+          "samples": [
+            "isee a che serve",
+            "isee a cosa serve",
+            "utilità isee",
+            "A che serve l\u0027isee",
+            "A cosa serve l\u0027isee"
+          ]
+        },
+        {
+          "name": "IseeUniIntent",
+          "slots": [],
+          "samples": [
+            "come avere isee-u",
+            "come richiedere isee-u",
+            "come ottenere isee-u",
+            "Isee u ",
+            "a chi chiedere isee u",
+            "a chi chiedere isee ",
+            "a chi si chiede isee u",
+            "Isee u a chi si chiede",
+            "Isee u come chiedere",
+            "Come si chiede l\u0027isee u",
+            "Come si chiede l\u0027isee università",
+            "a chi si chiede isee",
+            "Isee a chi si chiede",
+            "Isee come chiedere",
+            "Come si chiede l\u0027isee"
+          ]
+        },
+        {
+          "name": "IseeAcquisizioneIntent",
+          "slots": [],
+          "samples": [
+            "acquisizione isee",
+            "isee acquisizione ",
+            "devo consegnare attestazione cartacea dell\u0027isee",
+            "Cosa succede dopo aver fornito il consenso per l\u0027isee"
+          ]
+        },
+        {
+          "name": "IseeComeFunzionaIntent",
+          "slots": [],
+          "samples": [
+            "istruzioni isee",
+            "isee istruzioni",
+            "istruzioni su isee",
+            "isee come funziona",
+            "Come funziona isee",
+            "isee come consegnare",
+            "Come consegnare l\u0027isee"
+          ]
+        },
+        {
+          "name": "IseeNonAvvalersiIntent",
+          "slots": [],
+          "samples": [
+            "non voglio recapitare isee",
+            "non voglio depositare l\u0027isee",
+            "non voglio consegnare l\u0027isee",
+            "non voglio avvalermi dell\u0027isee",
+            "no isee"
+          ]
+        },
+        {
+          "name": "IseeProblemiConsensoIntent",
+          "slots": [],
+          "samples": [
+            "no consenso isee",
+            "non voglio dare il consenso per l\u0027isee",
+            "isee non voglio dare il consenso",
+            "non riesco a fornire il consenso per l\u0027isee",
+            "non riesco a dare il consenso per l\u0027isee",
+            "bag con l\u0027isee",
+            "problema isee",
+            "isee problema",
+            "Ho qualche problema con l\u0027isee",
+            "Ho difficoltà con l\u0027isee",
+            "problemi isee",
+            "Isee problemi",
+            "Ho problemi con l\u0027isee"
+          ]
+        },
+        {
+          "name": "IseeDopoScadenzaIntent",
+          "slots": [],
+          "samples": [
+            "quando scade isee",
+            "isee quando scade",
+            "scade l\u0027isee",
+            "cosa fare quando scade l\u0027isee",
+            "ha una scadenza l\u0027isee",
+            "l\u0027isee ha una scadenza",
+            "esiste una scadenza per l\u0027isee",
+            "isee scadenza",
+            "scadenza isee"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "12"
+}
