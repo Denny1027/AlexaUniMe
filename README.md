@@ -9,4 +9,4 @@ Questa skill è stata creata per eseguire dei test su nuove funzionalità, senza
 - [ ] Risolvere bug 1
 - [ ] Creare bucket su amazon S3
 - [ ] Collegare bucket S3 a lambda function `denny_test_lambda`
-- [ ] Creare lambda function `periodic_rubrica` che permette la creazione di un file `rubrica.json` all'interno di un bucket.
+- [ ] Creare lambda function `periodic_rubrica` che permette la creazione di un file `rubrica.json` all'interno del bucket `dennytestalexabucket`
