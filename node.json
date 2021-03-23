@@ -1,0 +1,309 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "denny test",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RegistraDipartimentoIntent",
+                    "slots": [
+                        {
+                            "name": "dip",
+                            "type": "Dipartimento",
+                            "samples": [
+                                "{dip}",
+                                "dipartimento {dip}",
+                                "dipartimento di {dip}",
+                                "Il mio dipartimento è {dip}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "registra nuovo dipartimento {dip}",
+                        "Il mio nuovo dipartimento è {dip}",
+                        "Imposta nuovo dipartimento {dip}",
+                        "Imposta dipartimento",
+                        "Registra dipartimento"
+                    ]
+                },
+                {
+                    "name": "EnunciaDipartimentoIntent",
+                    "slots": [],
+                    "samples": [
+                        "Mio Dipartimento",
+                        "Qual'è il mio dipartimento"
+                    ]
+                },
+                {
+                    "name": "NotizieIntent",
+                    "slots": [],
+                    "samples": [
+                        "notizie",
+                        "ultime news",
+                        "news",
+                        "ultime notizie",
+                        "leggimi le ultime notizie"
+                    ]
+                },
+                {
+                    "name": "ImpostaNumeroNotizieIntent",
+                    "slots": [
+                        {
+                            "name": "newsNumber",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{newsNumber} notizia",
+                                "{newsNumber} notizie",
+                                "{newsNumber}",
+                                "Voglio visualizzare {newsNumber}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "imposta numero notizie {newsNumber}",
+                        "imposta numero notizie "
+                    ]
+                },
+                {
+                    "name": "EventiIntent",
+                    "slots": [],
+                    "samples": [
+                        "prossimi eventi",
+                        "eventi"
+                    ]
+                },
+                {
+                    "name": "CercaPersonaIntent",
+                    "slots": [
+                        {
+                            "name": "fullName",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{fullName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "cerca {fullName}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Dipartimento",
+                    "values": [
+                        {
+                            "id": "10036",
+                            "name": {
+                                "value": "vet",
+                                "synonyms": [
+                                    "veterinaria",
+                                    "scienze veterinarie"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "10035",
+                            "name": {
+                                "value": "scipog",
+                                "synonyms": [
+                                    "scienze giuridiche",
+                                    "scienze politiche",
+                                    "scienze politiche e giuridiche"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "10034",
+                            "name": {
+                                "value": "mift"
+                            }
+                        },
+                        {
+                            "id": "10033",
+                            "name": {
+                                "value": "cospecs"
+                            }
+                        },
+                        {
+                            "id": "10032",
+                            "name": {
+                                "value": "chibiofaram"
+                            }
+                        },
+                        {
+                            "id": "10031",
+                            "name": {
+                                "value": "biomorf"
+                            }
+                        },
+                        {
+                            "id": "10030",
+                            "name": {
+                                "value": "patologiaumanadetev"
+                            }
+                        },
+                        {
+                            "id": "10029",
+                            "name": {
+                                "value": "dimed"
+                            }
+                        },
+                        {
+                            "id": "10028",
+                            "name": {
+                                "value": "ingegneria"
+                            }
+                        },
+                        {
+                            "id": "10027",
+                            "name": {
+                                "value": "giurisprudenza"
+                            }
+                        },
+                        {
+                            "id": "10026",
+                            "name": {
+                                "value": "economia"
+                            }
+                        },
+                        {
+                            "id": "10025",
+                            "name": {
+                                "value": "dicam"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RegistraDipartimentoIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1552779295"
+                    },
+                    "slots": [
+                        {
+                            "name": "dip",
+                            "type": "Dipartimento",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1552779295.850160037414"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ImpostaNumeroNotizieIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1379303423104"
+                    },
+                    "slots": [
+                        {
+                            "name": "newsNumber",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.281480001791.1315801835571"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CercaPersonaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "fullName",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.550225407916.319148957083"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1552779295.850160037414",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Qual'è il tuo dipartimento?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1552779295",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Il tuo dipartimento è {dip} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.281480001791.1315801835571",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Puoi impostare uno, due o tre notizie. Quante ne vuoi visualizzare?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1379303423104",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Confermi {newsNumber} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.550225407916.319148957083",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Come si chiama la persona che stai cercando?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.263518778802",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Sicuro?"
+                    }
+                ]
+            }
+        ]
+    }
+}
