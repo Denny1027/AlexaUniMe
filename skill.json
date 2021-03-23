@@ -1,0 +1,55 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "Con \"Chiedi ad UNIME\"  puoi chiedere ad Alexa tutte le domande che riguardano l\u0027Università degli Studi di Messina!",
+          "examplePhrases": [
+            "Alexa apri chiedi ad unime",
+            "Come posso immatricolarmi",
+            "Come si richiede l\u0027isee"
+          ],
+          "keywords": [],
+          "name": "Chiedi ad UNIME",
+          "description": "\"Chiedi ad UNIME\" è una skill che ti permette di chiedere ad Alexa domande relative all\u0027Università di Messina. \n\nVuoi chiedere come immatricolarti? Vuoi maggiori informazioni sull\u0027ISEE e sulle sue procedure di acquisizione? Non sai dove ottenere determinati certificati? \n\nChiedi ad UNIME è qui per te!\n\nComincia anche tu chiedendo ad Alexa \"Apri Chiedi ad UNIME\"!",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "it-IT",
+            "language": "it"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "SCHOOLS",
+      "distributionCountries": [
+        "IT"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:513507115627:function:2d25c6c2-0fb2-4820-8871-483023b7bfd5:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "it-IT": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
