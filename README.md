@@ -2,15 +2,20 @@
 Questa skill è stata creata per eseguire dei test su nuove funzionalità, senza intaccare direttamente la skill principale.
 
 
-# Bug conosciuti
-1. In `impostaNumeroNotizieIntent`, nello slot `newsNumber`, impostare il set [1,2,3] di valori inseribili. In questo momento, puoi inserire qualunque valore.
+# Obiettivi
+* **Abilitare l'Account Linking alla Skill "Chiedi ad Unime":** ogni utente in questa maniera può autenticarsi ed avere una esperienza modellata sulla propria persona e carriera universitaria. Per abiltiarlo, sono necessari:
+  * WEB Authorization URI
+  * Access Token URI
+  * Client ID
+  * Secret ID
+  * Scopes*
+  * Domain List*
+  * Default Access Token Expiration Time
+* **Definire degli obiettivi per l'uso di algoritmi di machine learning in ambito universitario:** Questa fase si divide in 3 parti:
+  * Definizione degli obiettivi: trovare le domande a cui rispondere con il machine learning
+  * Analisi: individuare le metodologie di machine learning da applicare
+  * Ottenimento dei dati: attraverso uno strumento dedicato, ottenere in modo automatizzato le informazioni necessarie per il training (e il testing) degli algoritmi di machine learning pre-definiti
+  * Testing e distribuzione nel server (vedi passo successivo): creazione package e distribuzione
+* **Creare un server per la definizione di API REST neccessarie per l'ottenimento di informazioni derivanti dagli algoritmi di machine learning sopra citati:** l'idea è quella di utilizzare Python per la creazione di questo server, più nello specifico usando il framework `fastAPI` (https://fastapi.tiangolo.com/). La creazione del server può avvenire esclusivamente nel momento in cui gli algoritmi di machine learning sono già pronti per l'uso.
+* **Creare delle skill Alexa che utilizzino le API appena create**
 
-# Task list
-- [ ] Risolvere bug 1
-- [x] Creare bucket su amazon S3
-- [x] Collegare bucket S3 a lambda function `denny_test_lambda`
-- [x] Creare lambda function `periodic_rubrica` che permette la creazione di un file `rubrica.json` all'interno del bucket `dennytestalexabucket`
-
-## Risultato
-La lambda function accetta esclusivamente file **.zip**, sia come upload diretto (da interfaccia Lambda), sia da un bucket **S3**, quindi non è possibile creare un bucket, inserire i singoli file e dipendenze e *linkare* il bucket alla Lambda Function, in modo da indicargli quale file caricare per primo (dovrebbe essere *index.js*). 
-In questo modo, va a cadere anche l'idea di utilizzare una "Lambda" di supporto che permetta l'esecuzione periodica (mezzanotte di ogni giorno) di uno script che crei un file *.json* all'interno del bucket S3 (utilizzato dalla Lambda function della skill di Alexa), in modo di "alleggerire" il carico riguardo la richiesta all' API di **tutta** la rubrica ( 43k righe, 1.5s esecuzione).
