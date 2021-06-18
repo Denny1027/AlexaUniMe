@@ -1,9 +1,0 @@
-# ATTENZIONE! Le stesse informazioni devono essere inserite nel config.yaml del server "inserire_nome_qui"
-
-# Path assoluto dove salvare i dataset e i modelli creati.
-path: C:\Users\Danilo\Documents\Test
-
-# Credenziali S3
-s3_cred:
-  username: REST
-  password: Unimere$t01!
