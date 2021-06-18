@@ -1,0 +1,14 @@
+Questi file sono stati utilizzati per eseguire dei test e non sono più utili, al momento, per il progetto.
+Lascio comunque una piccola descrizione di questi file
+
+test_classification.py
+    script che esegue una classificazione di un dataset già diviso in x (input) e y(output) utilizzando tutti
+    gli algoritmi di machine learning più usati.
+
+new_nn_model_class.py
+    script che permette la creazione e il salvataggio di una rete neurale classificatrice. Codifica l'output per
+    prepararlo ad una classificazione multipla. Non utilizzato in quanto i punteggi non sono soddisfacenti.
+
+class_tester.py
+    file che contiene tutte le funzioni utilizzate da test_classification.py. Ogni funzione consiste in un algoritmo
+    di classificazione.
