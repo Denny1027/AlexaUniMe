@@ -15,6 +15,7 @@ class UserInfo(BaseModel):
 @router.post("/{aaOrdId}/{cdsId}/{adId}")
 async def guess_the_mark(aaOrdId, cdsId, adId, body: UserInfo, isAuth: bool = Depends(get_current_username)):
     res = g.guess(cdsId, aaOrdId, adId, body.ponderata, body.data_imm, body.data_nascita)
+    print(res)
     res = round(res['value'])
     if res == -1 or res == -2:
         raise HTTPException(status_code=404, detail="Vote cannot be guessed. Missing ml module or directory.")

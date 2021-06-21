@@ -15,9 +15,9 @@ my_path = cfg['path']
 
 def guess(cds_id, aa_ord_id, ad_id, pond, data_imm, data_nascita):
     if not path.exists("{}\\datasets\\{}\\{}.csv".format(my_path, aa_ord_id, cds_id)):
-        return -1 # non esiste il dataset, quindi non dovrebbe esistere nemmeno il modulo salvato
+        return {"value": -1} # non esiste il dataset, quindi non dovrebbe esistere nemmeno il modulo salvato
     if not path.exists("{}\\predict_marks\\{}\\{}\\{}".format(my_path, aa_ord_id, cds_id, ad_id)):
-        return -2 # esiste il dataset ma non esiste il modulo salvato
+        return {"value": -2} # esiste il dataset ma non esiste il modulo salvato
 
     ann = tf.keras.models.load_model("{}\\predict_marks\\{}\\{}\\{}".format(my_path, aa_ord_id, cds_id, ad_id))
 
